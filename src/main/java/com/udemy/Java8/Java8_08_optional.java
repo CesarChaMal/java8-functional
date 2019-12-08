@@ -41,5 +41,6 @@ public class Java8_08_optional {
     private static void picknameWithOptional(final List<String> names, String startingLetter) {
         final Optional<String> namefound = names.stream().filter(name -> name.startsWith(startingLetter)).findFirst();
         System.out.println("the first name that begins with " + startingLetter + ":" + namefound.orElse("no name was found"));
+        namefound.ifPresent(name-> System.out.println("way we found it"));
     }
 }
