@@ -8,7 +8,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Java8_12_sorting {
-    private static final Logger logger = LogManager.getLogger("Java8");
+    private static final Logger logger = LogManager.getLogger(new Object() { }.getClass().getEnclosingClass());
 
     public static void main(String[] args) {
         logger.info("Java 8 Functional programming");
@@ -47,6 +47,7 @@ public class Java8_12_sorting {
             return person1.ageDifference(person2);
         };
         Collections.sort(persons, comparator2);
+        persons.sort(comparator2);
         System.out.println(persons);
         System.out.println();
 

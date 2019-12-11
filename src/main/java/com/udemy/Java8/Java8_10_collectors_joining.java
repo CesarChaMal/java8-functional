@@ -10,7 +10,7 @@ import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
 public class Java8_10_collectors_joining {
-    private static final Logger logger = LogManager.getLogger("Java8");
+    private static final Logger logger = LogManager.getLogger(new Object() { }.getClass().getEnclosingClass());
 
     public static void main(String[] args) {
         logger.info("Java 8 Functional programming");

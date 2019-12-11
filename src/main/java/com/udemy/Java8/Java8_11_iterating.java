@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Java8_11_iterating {
-    private static final Logger logger = LogManager.getLogger("Java8");
+    private static final Logger logger = LogManager.getLogger(new Object() { }.getClass().getEnclosingClass());
 
     public static void main(String[] args) {
         logger.info("Java 8 Functional programming");
