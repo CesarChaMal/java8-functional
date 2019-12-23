@@ -1,10 +1,10 @@
 package com.udemy.Java8;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Java8_17_default_methods {
-    private static final Logger logger = LogManager.getLogger(new Object() {}.getClass().getEnclosingClass());
+    private static final Logger logger = LoggerFactory.getLogger(new Object() { }.getClass().getEnclosingClass());
 
     public static void main(String[] args) {
         logger.info("Java 8 Functional programming");

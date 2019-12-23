@@ -1,8 +1,7 @@
 package com.udemy.Java8;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -12,7 +11,7 @@ import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 
 public class Java8_09_reducing_operations {
-    private static final Logger logger = LogManager.getLogger(new Object() { }.getClass().getEnclosingClass());
+    private static final Logger logger = LoggerFactory.getLogger(new Object() { }.getClass().getEnclosingClass());
 
     public static void main(String[] args) {
         logger.info("Java 8 Functional programming");
